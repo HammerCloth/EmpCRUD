@@ -43,4 +43,14 @@ public class EmpServiceImpl implements EmpService {
     public List<Dept> getAllDept() {
         return deptMapper.getAllDept();
     }
+
+    @Override
+    public void deleteEmp(String eids) {
+        mapper.deleteEmp(eids);
+    }
+
+    @Override
+    public void addEmp(Emp emp) {
+        mapper.addEmp(emp);
+    }
 }

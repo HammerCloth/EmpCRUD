@@ -22,4 +22,10 @@ public interface EmpService {
 
     //获取所有部门信息
     List<Dept> getAllDept();
+
+    //删除员工信息
+    void deleteEmp(String eids);
+
+    //添加员工信息
+    void addEmp(Emp emp);
 }

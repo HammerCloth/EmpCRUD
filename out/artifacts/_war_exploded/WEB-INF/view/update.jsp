@@ -16,6 +16,7 @@
 
     <form:form action="${pageContext.servletContext.contextPath}/emp" method="post" modelAttribute="emp">
         <form:hidden path="eid"/>
+        <input type="hidden" name="_method" value="PUT">
         <table>
             <tr>
                 <th colspan="2">修改员工信息</th>

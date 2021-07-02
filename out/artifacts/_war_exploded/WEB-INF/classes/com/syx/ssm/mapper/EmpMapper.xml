@@ -42,4 +42,13 @@
         where eid = #{eid}
     </update>
 
+<!--    void deleteEmp(String dids);-->
+<delete id="deleteEmp">
+    delete from emp where eid in (${value})
+</delete>
+
+<!--    void addEmp(Emp emp);-->
+    <insert id="addEmp">
+        insert into emp(eid,ename,age,sex,did) values(null,#{ename},#{age},#{sex},#{dept.did})
+    </insert>
 </mapper>
